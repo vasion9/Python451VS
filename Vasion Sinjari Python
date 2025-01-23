@@ -1,0 +1,546 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/vasion9/Python451VS/blob/main/Vasion%20Sinjari%20Python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "acCZkw3zy_iY",
+        "outputId": "dba17443-b411-42a8-9dbf-06e795376e62"
+      },
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'first_name': 'Jane',\n",
+              " 'last_name': 'Gretsky',\n",
+              " 'nationality': 'Canada',\n",
+              " 'birth_year': 1961}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 4
+        }
+      ],
+      "source": [
+        "# Create a dictionary\n",
+        "\n",
+        "person = {\n",
+        "    \"first_name\": 'Wayne',\n",
+        "    \"last_name\": 'Gretsky',\n",
+        "    \"nationality\": 'Canada',\n",
+        "    \"birth_year\": 1961\n",
+        "}\n",
+        "person['first_name']\n",
+        "person['first_name'] = 'Jane' # We can change Wayne's name to Jane\n",
+        "person"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# EXERCISE: create a dictionary called car_type with your choice of a car brand, model, year, usnews_rating, and engine size."
+      ],
+      "metadata": {
+        "id": "uTGbYVI40-6u"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "## Write your answer here\n",
+        "\n",
+        "car_type = {\n",
+        "    \"brand\": 'BMW',\n",
+        "    \"model\": 'M3',\n",
+        "    \"year\": 2025,\n",
+        "    \"rating\": 8.8,\n",
+        "    \"engine\": 3.0\n",
+        "}\n",
+        "car_type"
+      ],
+      "metadata": {
+        "id": "7d2EwY1rR7Gu",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "69123140-4945-48d5-a272-fe6488a99e3e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "{'brand': 'BMW', 'model': 'M3', 'year': 2025, 'rating': 8.8, 'engine': 3.0}"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 1
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#LIST\n",
+        "\n",
+        "primes = [2, 3, 5, 7, 11]\n",
+        "users = [\"Dillon\", \"Michael\", \"Lea\"]\n",
+        "users[-1]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 35
+        },
+        "id": "BvYVVKaB0HIg",
+        "outputId": "9e5e8e88-1ea1-492f-b2a2-6a5cd94da5ef"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'Lea'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "users[0] = 'Madison'\n",
+        "users"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3yKbvSoL1Lp5",
+        "outputId": "46d8320b-da95-4808-d491-4fde22c92e1d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['Madison', 'Michael', 'Lea']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "users.append('Rachel')\n",
+        "users"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 162
+        },
+        "id": "JGn6Xr3C1LzM",
+        "outputId": "c97ab30d-fbf2-418e-e3da-aa89432b33b3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'users' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-6-94173c543300>\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0musers\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mappend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'Rachel'\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0musers\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'users' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "users.pop()\n",
+        "users"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 162
+        },
+        "id": "CaEUb_3F8RUR",
+        "outputId": "9f26cf08-fba7-41f3-e617-8961a0a30112"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'users' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-4-0f169d851c27>\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0musers\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mpop\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0musers\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'users' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# List with dictionaries as each item\n",
+        "\n",
+        "products = [\n",
+        "    {\"name\": \"IPhone 12\", \"price\": 949},\n",
+        "    {\"name\": \"Fairphone\", \"price\": 419},\n",
+        "    {\"name\": \"Pixel 5\", \"price\": 799}]"
+      ],
+      "metadata": {
+        "id": "fW13F_OY8RYx"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Create a list with dictionaries of 3 people with their names, ages, city of birth, and occupation."
+      ],
+      "metadata": {
+        "id": "EyXkKbGcR2A-"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "## Write your answer here\n",
+        "## Write your answer here\n",
+        "\n",
+        "people_work = [\n",
+        "    {\"name\": \"Cristiano Ronaldo\", \"age\": \"40\", \"birthplace\": \"Portugal\", \"occupation\": \"soccer player\"},\n",
+        "    {\"name\": \"Ben Shelton\", \"age\": \"22\", \"birthplace\": \"United States\", \"occupation\": \"tennis player\"},\n",
+        "    {\"name\": \"Jalen Brunson\", \"age\": \"28\", \"birthplace\": \"United States\", \"occupation\": \"basketball player\"}]\n",
+        "\n",
+        "\n",
+        "people_work\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "pMpq0S0H8Rbn",
+        "collapsed": true,
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f48bfcc0-d089-41d5-f590-47b71f029f5e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[{'name': 'Cristiano Ronaldo',\n",
+              "  'age': '40',\n",
+              "  'birthplace': 'Portugal',\n",
+              "  'occupation': 'soccer player'},\n",
+              " {'name': 'Ben Shelton',\n",
+              "  'age': '22',\n",
+              "  'birthplace': 'United States',\n",
+              "  'occupation': 'tennis player'},\n",
+              " {'name': 'Jalen Brunson',\n",
+              "  'age': '28',\n",
+              "  'birthplace': 'United States',\n",
+              "  'occupation': 'basketball player'}]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Tuples\n"
+      ],
+      "metadata": {
+        "id": "3yVFzLfdaV72"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "point_dict = {\"x\": 2, \"y\": 4}\n",
+        "point_tuple = (2, 4)\n",
+        "\n",
+        "date_dict = {\n",
+        "  \"year\": 1973,\n",
+        "  \"month\": 10,\n",
+        "  \"day\": 23\n",
+        "}\n",
+        "date_tuple = (1973, 10, 23)\n",
+        "\n",
+        "date_tuple[0] # 1973\n",
+        "len(date_tuple) # 3"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0VPc5WzySXUJ",
+        "outputId": "7eec82fd-d6fd-4eae-8fc5-6283cbca5b66"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 3
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = [1, 2, 3]\n",
+        "b = a\n",
+        "b.append(4)\n",
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iLsiyl6SSXWu",
+        "outputId": "db130adb-c2ff-4c4e-d0ef-b4162823b1d4"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1, 2, 3, 4]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 9
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "OBJECT REFERENCES AND MUTATIONS"
+      ],
+      "metadata": {
+        "id": "T_6Gi5uja-ko"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = [1, 2, 3]\n",
+        "b = a\n",
+        "b.append(4)"
+      ],
+      "metadata": {
+        "id": "RgDpPQkGa__W"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = [1, 2, 3]\n",
+        "# creating a new copy\n",
+        "b = a.copy()\n",
+        "# modifying b\n",
+        "b.append(4)\n",
+        "a"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "B6VuiXhDbD1h",
+        "outputId": "1b33e501-de91-403f-e265-d51ec28de904"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1, 2, 3]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## INPUT AND OUTPUT OF TEXT\n"
+      ],
+      "metadata": {
+        "id": "9OzH0JvEeBOk"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"What is your name?\")\n",
+        "name = input()\n",
+        "name\n",
+        "print(\"Nice to meet you, \" + name)\n",
+        "# name_length = len(name)\n",
+        "# name_length\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BGmsRpmGbDx4",
+        "outputId": "4219e96c-1cff-4b4d-f682-a3834bd14b47"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "What is your name?\n",
+            "Alice\n",
+            "Nice to meet you, Alice\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "5"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 17
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Write a program which will ask the user for their birth year and will respond with the user's age in the year 2025."
+      ],
+      "metadata": {
+        "id": "pcf_eOQQfoUJ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"What is your birth year?\")\n",
+        "print(\"What is your birth year?\")\n",
+        "birth_year = input()\n",
+        "print(\"In 2025, you will be, \" + str(2025 - int(birth_year)))\n"
+      ],
+      "metadata": {
+        "id": "EdUoqKqwbDq2",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "1bf5bcf4-8212-4d82-f732-25e8a5ab1a9a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "What is your birth year?\n",
+            "What is your birth year?\n",
+            "2003\n",
+            "In 2025, you will be, 22\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "\n",
+        "print(random.randint(1, 6))\n",
+        "print(random.choice([\"heads\", \"tails\"]))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RHSxKGpPbDoQ",
+        "outputId": "76847429-7862-4de8-ef67-bc1d2867115d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n",
+            "tails\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
